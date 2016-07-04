@@ -47,6 +47,7 @@ module.exports = function (grunt) {
                     {expand: true,cwd: 'public/', src: ['*.html'], dest: 'dest/', filter: 'isFile'},
                     {expand: true,cwd: 'public/', src: ['assets/**'], dest: 'dest/'},
                     {expand: true,cwd: 'public/',  src: ['js/basic.browserify.min.js'], dest: 'dest/', filter: 'isFile'},
+                    {expand: true,cwd: 'public/',  src: ['js/dev/holder.min.js'], dest: 'dest/', filter: 'isFile'},
                     {expand: true,cwd: 'public/',  src: ['css/**'], dest: 'dest/', filter: 'isFile'}
                 ]
             }
