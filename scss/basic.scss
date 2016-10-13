@@ -46,6 +46,18 @@ a {
           font-size: 15px;
         }
       }
+      .dropdown-menu {
+        a {
+          text-align: left;
+          padding: 5px 10px;
+          font-size: 12px;
+          letter-spacing: 0.5px;
+          line-height: 30px;
+          @media (max-width: $screen-sm-max) {
+            text-align: center;
+          }
+        }
+      }
     }
   }
   .navbar-toggle {
@@ -312,7 +324,7 @@ div.top-right {
       }
       @media (max-width: $screen-sm-max) {
         margin-left: 50%;
-        > div{
+        > div {
           margin-left: -35%;
           text-align: left;
         }
