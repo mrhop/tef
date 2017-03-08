@@ -3,14 +3,15 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TEF</title>
+    <title>TEP</title>
+    <link href="css/flexslider/flexslider.css" rel="stylesheet" type="text/css"/>
     <link href="css/basic.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="js/basic.browserify.js"></script>
     <script type="text/javascript" src="js/dev/holder.min.js"></script>
 </head>
-<body id="about-us">
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
+<body id="index">
+<nav class="navbar navbar-default navbar-fixed-top top">
+    <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -20,184 +21,208 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">
-                <img src="holder.js/300x90?bg=0771bb">
-            </a>
+            <a class="navbar-brand" href="index.html"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">About Us</a></li>
-                <li><a href="career.html">Career</a></li>
-                <li><a href="partners.html">Partners</a></li>
-                <li><a href="contact.html">Contact</a></li>
                 <li class="dropdown">
-                    <a href="contact.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Strategy<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Separated link</a></li>
+                        <li><a href="strategy.html">Strategy</a></li>
+                        <li><a href="cefc.html">CEFC</a></li>
+                    </ul>
+                </li>
+                <li><a href="addvalue.html">ESI Added Value</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Contact<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="career.html">Careers</a></li>
                     </ul>
                 </li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
-    <div class="top-right language">
-        <div class="btn-group btn-group-xs" role="group">
-            <a class="btn btn-default">EN</a>
-            <a class="btn btn-default">中文</a>
-        </div>
-    </div>
+    <!--<div class="top-right language">-->
+    <!--<div class="btn-group btn-group-xs" role="group">-->
+    <!--<a class="btn btn-default">EN</a>-->
+    <!--<a class="btn btn-default">中文</a>-->
+    <!--</div>-->
+    <!--</div>-->
 </nav>
 <div class="container first-container">
-    <h1 class="title">Title about us</h1>
-    <p class="h3">Comment-->We invest in companies with high value-add technologies that significantly increase
-        industrial productivity and efficiency, enable new applications and manufacturing methods and drive innovation
-        for industrial products and solutions.</p>
+    <div class="flexslider">
+        <ul class="slides home_slider">
+            <li class="item" style="background-image: url('assets/images/index/first/slider1.jpg')">
+                <div class="flex-caption">
+                    <div>
+                        <h1 class="scroll animated">Investments in Sustainable Infrastructure</h1>
+                        <h3 class="scroll animated">Investing and building a smart future for today’s needs</h3>
+                    </div>
+                </div>
+            </li>
+            <li class="item" style="background-image: url('assets/images/index/first/slider1.jpg')">
+                <div class="flex-caption">
+                    <div>
+                        <h1 class="scroll animated">Title2</h1>
+                        <h3 class="scroll animated">Subtitie2</h3>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
 </div>
-<div class="container-fluid second-container">
+<div class="container second-container">
+    <div class="col-md-4 col-sm-6 col">
+        <div>
+                <span class="icon">
+                    <img src="assets/images/index/second/feature1.png"/>
+                </span>
+            <h3>Who We Are</h3>
+            <p class="comment">
+                ESI-TEP is a European investment company, part of the Tucher & Schmied Group
+            </p>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col">
+        <div>
+                <span class="icon">
+                    <img src="assets/images/index/second/feature2.png"/>
+                </span>
+            <h3>Our Mission</h3>
+            <p class="comment">ESI-TEP partners with European SMEs willing to expand their business to China, in key
+                strategic sectors.</p>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col">
+        <div>
+                <span class="icon">
+                    <img src="assets/images/index/second/feature3.jpg"/>
+                </span>
+            <h3>Experience</h3>
+            <p class="comment">ESI-TEP has a record of success operating in China. Having previously completed 5
+                offshore funds, and is also financing the CEFC project in Shenzhen.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid third-container">
     <div class="container">
-        <div class="col-md-4 col">
-            <div>
-                <span class="icon">
-                    <img src="assets/images/aboutus/second-container-icon1.jpg"/>
-                </span>
-                <h3>Features and details</h3>
-                <ul>
-                    <li>Industrial Automation</li>
-                    <li>Robotics</li>
-                    <li>Machine Vision</li>
-                    <li>Additive Manufacturing/3D printing</li>
-                    <li>Industrial Computing</li>
-                    <li>Industrial Software Solutions / IoT</li>
-                    <li>...</li>
-                </ul>
-            </div>
+        <div class="col-md-8 col left">
+            <h3>Our Service<br/>Your Opportunity</h3>
+            <img src="assets/images/index/third/map.png"/>
         </div>
-        <div class="col-md-4 col">
-            <div>
-                <span class="icon">
-                    <img src="assets/images/aboutus/second-container-icon1.jpg"/>
-                </span>
-                <h3>Features and details</h3>
-                <ul>
-                    <li>Industrial Automation</li>
-                    <li>Robotics</li>
-                    <li>Machine Vision</li>
-                    <li>Additive Manufacturing/3D printing</li>
-                    <li>Industrial Computing</li>
-                    <li>Industrial Software Solutions / IoT</li>
-                    <li>...</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-4 col">
-            <div>
-                c<span class="icon">
-                    <img src="assets/images/aboutus/second-container-icon1.jpg"/>
-                </span>
-                <h3>Features and details</h3>
-                <ul>
-                    <li>Industrial Automation</li>
-                    <li>Robotics</li>
-                    <li>Machine Vision</li>
-                    <li>Additive Manufacturing/3D printing</li>
-                    <li>Industrial Computing</li>
-                    <li>Industrial Software Solutions / IoT</li>
-                    <li>...</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-4 col">
-            <div>
-                    <span class="icon">
-                    <img src="assets/images/aboutus/second-container-icon1.jpg"/>
-                </span>
-                <h3>Features and details</h3>
-                <ul>
-                    <li>Industrial Automation</li>
-                    <li>Robotics</li>
-                    <li>Machine Vision</li>
-                    <li>Additive Manufacturing/3D printing</li>
-                    <li>Industrial Computing</li>
-                    <li>Industrial Software Solutions / IoT</li>
-                    <li>...</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-4 col">
-            <div>
-                    <span class="icon">
-                    <img src="assets/images/aboutus/second-container-icon1.jpg"/>
-                </span>
-                <h3>Features and details</h3>
-                <ul>
-                    <li>Industrial Automation</li>
-                    <li>Robotics</li>
-                    <li>Machine Vision</li>
-                    <li>Additive Manufacturing/3D printing</li>
-                    <li>Industrial Computing</li>
-                    <li>Industrial Software Solutions / IoT</li>
-                    <li>...</li>
-                </ul>
-            </div>
+        <div class="col-md-4 col right">
+            <ul>
+                <li>
+                    <h3>4</h3>
+                    <p>Offices</p>
+                </li>
+                <li>
+                    <h3>US $300 M</h3>
+                    <p>Available Funds</p>
+                </li>
+                <li>
+                    <h3>X</h3>
+                    <p>Partners</p>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
-<div class="container third-container">
-    <h3>Bridge Function</h3>
-    <h4>AGIC Capital actively supports its portfolio companies towards successful realization of growth opportunities in
-        Europe and the Asian markets.</h4>
-    <p>Small- and medium-sized companies in Europe that strive to realize their growth potential in Asia typically
-        struggle to overcome hurdles such as cultural differences, language barriers, governmental and regulatory risks,
-        capital requirements etc. AGIC, with its cross-border team, local presence and market expertise, provides the
-        bridge needed to succeed in foreign markets. AGIC not only supports its portfolio companies in every step of
-        their market entry into Asia, but also remains a close partner throughout the subsequent phase of increasing
-        market penetration.</p>
-</div>
-<div class="container fourth-container">
-    <h3>Our Unique Selling Proposition</h3>
-    <div class="col col-md-3">
-        <div>
-            <h2>EXPERTS</h2>
-        </div>
-        <p>AGIC’s industry expert network provides competence in operational and strategic issues thus helping
-            management teams to define and implement their strategic goals</p>
+<a id="news" name="news" ></a>
+<div class="container-fluid fourth-container">
+    <h1>News</h1>
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="assets/images/index/fourth/news1.jpg">
+                <h5>December 2016</h5>
+                <p class="content">Hong Kong- ESI-TEP opened its doors to its’ new office in Hong Kong. The office
+                    opened with a celebratory party with members from the foreign business community presentHong Kong-
+                    ESI-TEP opened its doors to its’ new office in Hong Kong. The office
+                    opened with a celebratory party with members from the foreign businesst</p>
+            </li>
+            <li>
+                <img src="assets/images/index/fourth/news1.jpg">
+                <h5>December 2016</h5>
+                <p class="content">Hong Kong- ESI-TEP opened its doors to its’ new office in Hong Kong. The office
+                    opened with a celebratory party with members from the foreign business community present</p>
+            </li>
+            <li>
+                <img src="assets/images/index/fourth/news1.jpg">
+                <h5>December 2016</h5>
+                <p class="content">Hong Kong- ESI-TEP opened its doors to its’ new office in Hong Kong. The office
+                    opened with a celebratory party with members from the foreign business community present</p>
+            </li>
+            <li>
+                <img src="assets/images/index/fourth/news1.jpg">
+                <h5>December 2016</h5>
+                <p class="content">Hong Kong- ESI-TEP opened its doors to its’ new office in Hong Kong. The office
+                    opened with a celebratory party with members from the foreign business community present</p>
+            </li>
+            <li>
+                <img src="assets/images/index/fourth/news1.jpg">
+                <h5>December 2016</h5>
+                <p class="content">Hong Kong- ESI-TEP opened its doors to its’ new office in Hong Kong. The office
+                    opened with a celebratory party with members from the foreign business community present</p>
+            </li>
+            <li>
+                <img src="assets/images/index/fourth/news1.jpg">
+                <h5>December 2016</h5>
+                <p class="content">Hong Kong- ESI-TEP opened its doors to its’ new office in Hong Kong. The office
+                    opened with a celebratory party with members from the foreign business community present</p>
+            </li>
+        </ul>
     </div>
-    <div class="col col-md-3">
-        <div>
-            <h2>EXPERTS</h2>
-        </div>
-        <p>AGIC’s industry expert network provides competence in operational and strategic issues thus helping
-            management teams to define and implement their strategic goals</p></div>
-    <div class="col col-md-3">
-        <div>
-            <h2>EXPERTS</h2>
-        </div>
-        <p>AGIC’s industry expert network provides competence in operational and strategic issues thus helping
-            management teams to define and implement their strategic goals</p></div>
-    <div class="col col-md-3">
-        <div>
-            <h2>EXPERTS</h2>
-        </div>
-        <p>AGIC’s industry expert network provides competence in operational and strategic issues thus helping
-            management teams to define and implement their strategic goals</p></div>
-</div>
-
-<div class="container fifth-container">
-    <h3>Our Approach</h3>
-    <p>AGIC invests in successful European companies, with the mission of helping them develop into global market
-        leaders. We are steadily looking for unique European companies, with a growing, proven and scalable business
-        model, that include talented and experienced management teams and have a strong growth potential in Asia and
-        beyond.</p>
-    <p>With typical investments between EUR 25–100 million, we help companies in their day-to-day business and the execution of their strategic growth plans. We fund organic business expansion and inorganic growth as well as support succession and shareholder transitions. Investments can be made in the form of minority growth capital or buyouts. AGIC can also engage in either private secondary transactions or publicly listed entities.</p>
 </div>
 <div class="container-fluid footer">
-    <p></p>
+    <div class="top">
+        <ul class="row">
+            <li class="col col-md-3">
+                <div>
+                    <a href="#">Investment Strategy</a>
+                    <ul>
+                        <li><a href="strategy.html">Investment Strategy</a></li>
+                        <li><a href="cefc.html">China EU Future City</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="col col-md-3">
+                <div><a href="portfolio.html">Portfolio</a></div>
+            </li>
+            <li class="col col-md-3">
+                <div><a href="team.html">Team</a></div>
+            </li>
+            <li class="col col-md-3">
+                <div><a href="#">Contact</a>
+                    <ul>
+                        <li><a href="index.html#news">News centre</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="career.html">Careers</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <a class="pull-left"><img src="assets/images/common/footer-logo.png"></a>
+        <ul class="pull-right">
+            <li><a><img src="assets/images/common/social3.png"></a></li>
+            <li><a><img src="assets/images/common/social2.png"></a></li>
+            <li><a><img src="assets/images/common/social1.png"></a></li>
+        </ul>
+    </div>
+
     <div class="copyright">
-        <div class="container">© 2016 TEF Capital. All rights reserved.</div>
+        <div class="container-fluid">
+            <p class="pull-left"><a>Legal notice</a><a>Privacy policy</a></p>
+            <p class="pull-right">©2017 Euro Sino Invest – Technology Expansion Fund</p>
+        </div>
     </div>
 </div>
 </body>
