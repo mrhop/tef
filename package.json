@@ -31,5 +31,8 @@
     "bootstrap": "./node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js",
     "utilFun": "./public/js/dev/self/utilFun.js"
   },
-  "browserify-shim": "./public/js/dev/self/shims.js"
+  "browserify-shim": "./public/js/dev/self/shims.js",
+  "dependencies": {
+    "image-map-resizer": "^1.0.3"
+  }
 }
