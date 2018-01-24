@@ -122,6 +122,10 @@ a {
 .container-fluid {
   padding-left: 30px;
   padding-right: 30px;
+  @media (max-width: $screen-xs-max) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 div.top-right {
@@ -940,6 +944,9 @@ div.top-right {
       color: $brand-primary;
       font-weight: bold;
     }
+    h1 {
+      margin-top: 40px;
+    }
     div.container {
       padding-top: 30px;
       .col {
@@ -974,6 +981,9 @@ div.top-right {
     h1, h3 {
       color: $brand-primary;
       font-weight: bold;
+    }
+    h1 {
+      margin-top: 40px;
     }
     div.container {
       padding-top: 30px;
