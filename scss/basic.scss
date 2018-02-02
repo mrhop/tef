@@ -60,7 +60,7 @@ a {
       display: block;
       height: 90px;
       width: 287px;
-      background: url("../assets/images/common/logo-red.png") no-repeat center;
+      background: url("../assets/images/common/logo-black.png") no-repeat center;
       background-size: cover;
     }
     .navbar-right {
@@ -203,6 +203,7 @@ div.top-right {
       padding-bottom: 0px;
       a.navbar-brand {
         background: url("../assets/images/common/logo-white.png") no-repeat center;
+        background-size: cover;
       }
       .navbar-right {
         .navbar-nav {
@@ -563,6 +564,13 @@ div.top-right {
       font-weight: bold;
       font-size: 20px;
     }
+    p.desc {
+      width: 60%;
+      margin: auto;
+      @media (max-width: $screen-xs-max) {
+        width: 80%;
+      }
+    }
     .container-fluid {
       padding-left: 0;
       padding-right: 0;
@@ -666,6 +674,7 @@ div.top-right {
       }
       ol.flex-control-nav {
         bottom: -30px;
+        margin-top: 80px;
       }
     }
   }
