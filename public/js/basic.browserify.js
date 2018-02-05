@@ -31,6 +31,9 @@ require("flexslider");
 require("bootstrap");
 var utilFun = require("utilFun");
 $(document).ready(function () {
+    $(".navbar-nav li.active").removeClass("active");
+    $(".navbar-nav li." + $("body").attr("id") + "-li").addClass("active");
+    $(".navbar-nav li.parent-" + $("body").attr("id") + "-li").addClass("active");
     var scrollMonitor = require("scrollMonitor");
     //do something
     if ($("body").attr("id") == "index") {
